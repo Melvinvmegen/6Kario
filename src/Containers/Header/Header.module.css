@@ -1,0 +1,124 @@
+.SiteHeader {
+  background-color: #fff;
+  display: block;
+  height: auto;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.SiteHeaderWrapper {
+  background: inherit;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: height .5s;
+  width: 100%;
+  z-index: 3;
+    border-bottom: 1px solid #eee;
+
+}
+
+.MainHeader {
+  height: 100px;
+  transition: height .5s;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+#sticky-header {
+  position: fixed;
+  top: -200px;
+  width: 100%;
+  transition: top 0.3s;
+  background: white;
+  z-index: 2;
+  border-bottom: 1px solid #eee;
+}
+
+.sticky-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sticky-header-left {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  transition: all .5s;
+  width: 100%;
+  position: relative;
+  max-width: 325px;
+  float: left;
+  margin-top: 20px
+}
+
+.sticky-header-right {
+  right: 0;
+  top: 0;
+  transition: all .5s;
+  max-width: 900px;
+  display: flex;
+}
+
+.header-user {
+  display: inline-block;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+.header-hire-me {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header-login {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header-search {
+  display: inline-block;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+.main-header h1 a {
+  font-size: 36px;
+}
+
+.main-header a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-bar {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-bar-container {
+  border-bottom: 1px solid #eee;
+}
+
+.nav-menu {
+  justify-content: space-around;
+  margin: 0 auto;
+  display: flex;
+}
+
+
+
+.sticky-header-right .nav-menu div a {
+  padding: 0px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
