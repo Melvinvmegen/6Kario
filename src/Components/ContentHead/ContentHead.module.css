@@ -1,0 +1,19 @@
+.Content {
+  margin: 50px auto;
+}
+
+.ContentTitle {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.ContentText {
+  text-align: center;
+}
+
+.ContentImage {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}

@@ -1,23 +1,24 @@
 import React, { Fragment } from 'react';
-import Content from '../../../../Components/Content/Content';
+import Content from '../../../../Components/ContentBlock/ContentBlock';
 import Carousel from '../../../../Components/Carousel/Carousel';
+import classes from './StudioMain.module.css'
 
 const StudioMain = (props) => {
   return (
     <Fragment>
-      <div className="flex">
-        <div className="flex-left">
-          <Content title={props.input1.title} text={props.input1.text} />
+      <div className={classes.Studio}>
+        <div className={classes.StudioLeft}>
+          <Content title={props.input1.title} text={props.input1.text} align />
         </div>
-        <div className="flex-right">
+        <div className={classes.StudioRight}>
           <Carousel next={props.next} prev={props.prev} img={props.img} />
         </div>
       </div>
-      <div className="flex">
-        <div className="flex-left">
+      <div className={classes.Studio}>
+        <div className={classes.StudioLeft}>
           <Carousel next={props.next} prev={props.prev} img={props.img} />
         </div>
-        <div className="flex-right">
+        <div className={classes.StudioRight}>
           <Content title={props.input1.title} text={props.input1.text} />
         </div>
       </div>

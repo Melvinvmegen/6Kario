@@ -2,10 +2,11 @@ import React from 'react'
 
 const Button = (props) => {
   return (
-    <div className="main-header-right">
-      <div className="header-user d-none d-sm-none d-md-none d-lg-flex">
-        <p>Contact</p>
-      </div>
+    <div className={props.wrapperClass + " header-hire-me"} onClick={props.modal} >
+      <span>
+        <a className={props.btnClass + " cta-button"} id={props.id ? props.id : "sticky-hire-me"}
+          title="hire-me" > {props.action ? props.action : "Contact"}</a>
+      </span>
     </div>
   )
 }

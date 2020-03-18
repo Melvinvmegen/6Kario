@@ -1,0 +1,32 @@
+.Content {
+  margin: 50px auto;
+}
+
+.ContentTitle {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.ContentImage {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+
+.ContentTitleLeft {
+  text-align: left;
+}
+
+.ContentTextLeft {
+  text-align: left;
+}
+
+.ContentTitleRight {
+  text-align: right;
+}
+
+.ContentTextRight {
+  text-align: right;
+}

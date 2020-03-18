@@ -31,10 +31,10 @@ class Label extends Component {
   render() {
     return (
       <Fragment>
-        <Divider />
+        <Divider title="Label" />
         <ContentHead title={this.state.inputs[0].title} text={this.state.inputs[0].text} />
         <LabelMain input1={this.state.inputs[1]} input2={this.state.inputs[2]} />
-        <Carousel next={this.state.nextIcon} prev={this.state.prevIcon} img={this.state.images}/>
+        <Carousel next={this.state.nextIcon} prev={this.state.prevIcon} img={this.state.images} />
       </Fragment>
     )
   }

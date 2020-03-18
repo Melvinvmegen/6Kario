@@ -1,0 +1,12 @@
+.Label {
+  display: flex;
+}
+
+.LabelLeft {
+  margin-right: 50px;
+  text-align: left;
+}
+
+.LabelRight {
+  margin-left: 50px;
+}

@@ -1,21 +1,17 @@
 import React, { Component, Fragment } from "react";
 import Divider from "../../../Components/Divider/Divider";
-import ContactForm from "./ContactForm/ContactForm";
 import Map from "./Map/Map";
+import classes from "./Contact.module.css";
 
 
 class Contact extends Component {
-  state = {
-
-  }
 
   render() {
     return (
-      <Fragment>
-        <Divider />
-        <ContactForm />
+      <div className={classes.Contact}>
+        <Divider title="Contact" />
         <Map />
-      </Fragment>
+      </div>
     )
   }
 }

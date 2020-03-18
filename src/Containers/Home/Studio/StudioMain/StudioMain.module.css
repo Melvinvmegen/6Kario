@@ -1,0 +1,13 @@
+.Studio {
+  display: flex;
+}
+
+.StudioLeft {
+  width: 40%;
+  margin: 30px;
+}
+
+.StudioRight {
+  width: 40%;
+  margin: 30px;
+}

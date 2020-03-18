@@ -1,14 +1,15 @@
 import React from 'react';
-import Content from '../../../../Components/Content/Content';
+import Content from '../../../../Components/ContentBlock/ContentBlock';
+import classes from './LabelMain.module.css'
 
 const LabelMain = (props) => {
   return (
-    <div className="flex">
-      <div className="flex-left">
+    <div className={classes.Label}>
+      <div className={classes.LabelLeft}>
         <Content title={props.input1.title} text={props.input1.text} />
       </div>
-      <div className="flex-right">
-        <Content title={props.input2.title} text={props.input2.text} />
+      <div className={classes.LabelRight}>
+        <Content title={props.input2.title} text={props.input2.text} align />
       </div>
     </div>
   )
