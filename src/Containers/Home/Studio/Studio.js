@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import Divider from "../../../Components/Divider/Divider";
 import StudioMain from "./StudioMain/StudioMain";
 import ContentHead from '../../../Components/ContentHead/ContentHead';
+import classes from "./Studio.module.css";
 
 
 class Studio extends Component {
@@ -29,11 +30,12 @@ class Studio extends Component {
 
   render() {
     return (
-      <Fragment>
+      <div className={classes.Studio}>
+        <a href="/" id="Studio" className="section-anchor-first"> </a>
         <Divider title="Studio" />
         <ContentHead title={this.state.inputs[0].title} text={this.state.inputs[0].text} />
         <StudioMain input1={this.state.inputs[1]} input2={this.state.inputs[2]} next={this.state.nextIcon} prev={this.state.prevIcon} img={this.state.images} />
-      </Fragment>
+      </div>
     )
   }
 }

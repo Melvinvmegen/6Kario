@@ -1,0 +1,14 @@
+.SideMap {
+  width: 40%;
+  margin-left: 3%;
+}
+
+.SideMapTitle {
+  font-weight: 700;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.SideMapText {
+  text-align: right;
+}

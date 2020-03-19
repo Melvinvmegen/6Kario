@@ -3,6 +3,7 @@ import Divider from "../../../Components/Divider/Divider";
 import LabelMain from "./LabelMain/LabelMain";
 import Carousel from '../../../Components/Carousel/Carousel';
 import ContentHead from '../../../Components/ContentHead/ContentHead';
+import classes from "./Label.module.css"
 
 
 class Label extends Component {
@@ -30,12 +31,13 @@ class Label extends Component {
 
   render() {
     return (
-      <Fragment>
+      <div className={classes.Label}>
+        <a href="/" id="Label" className="section-anchor-first"> </a>
         <Divider title="Label" />
         <ContentHead title={this.state.inputs[0].title} text={this.state.inputs[0].text} />
         <LabelMain input1={this.state.inputs[1]} input2={this.state.inputs[2]} />
         <Carousel next={this.state.nextIcon} prev={this.state.prevIcon} img={this.state.images} />
-      </Fragment>
+      </div>
     )
   }
 }

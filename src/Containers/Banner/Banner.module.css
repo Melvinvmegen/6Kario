@@ -1,21 +1,10 @@
 .SectionBanner {
-  height: 80vh;
+  height: 100vh;
 }
 
-.BannerContainer {
+.videoBanner {
   width: 100%;
   height: 100%;
-}
-
-.Banner {
-  width: 100%;
-  height: 90vh;
-  display: block;
-  background-size: cover;
-  background-position: inherit;
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(https://images.unsplash.com/photo-1482442120256-9c03866de390?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=60);
 }
 
 .Arrow {
@@ -25,4 +14,9 @@
   margin-left: -20px;
   width: 80px;
   height: 80px;
+}
+
+.fa-chevron-down {
+  font-size: 40px;
+  color: white;
 }

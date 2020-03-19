@@ -1,0 +1,8 @@
+.btnMap {
+  position: absolute;
+  z-index: 3;
+}
+
+.Map {
+  width: 60%;
+}

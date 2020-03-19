@@ -2,11 +2,12 @@ import React, { Fragment, Component } from 'react';
 import ReactMapGL, { Marker } from "react-map-gl";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import classes from './Map.module.css';
 
 class Map extends Component {
   state = {
     viewport: {
-      width: "50vw",
+      width: "45vw",
       height: "50vh",
       latitude: 43.15,
       longitude: 6.0667,
@@ -26,7 +27,7 @@ class Map extends Component {
         long: position.coords.longitude
       };
       let newViewport = {
-        width: "50vw",
+        width: "45vw",
         height: "50vh",
         latitude: position.coords.latitude,
         longitude: position.coords.longitude,
@@ -49,8 +50,8 @@ class Map extends Component {
     const mapBoxStyle = "mapbox://styles/mapbox/outdoors-v11"
 
     return (
-      <Fragment>
-        <button onClick={this.setUserLocation}>Ma position</button>
+      <div className={classes.Map}>
+        <button className={classes.btnMap} onClick={this.setUserLocation}>Ma position</button>
         <ReactMapGL {...this.state.viewport}
           onViewportChange={(viewport => this.handleViewportChange(viewport))}
           mapboxApiAccessToken={mapBoxToken}
@@ -71,7 +72,7 @@ class Map extends Component {
           ) : null
           }
         </ReactMapGL>
-      </Fragment >
+      </div >
     )
   }
 }

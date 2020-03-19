@@ -131,6 +131,7 @@ class ContactForm extends Component {
     }
 
     let contactForm = <form onSubmit={this.contactHandler}>
+      <h2 className={classes.titleForm}>Contactez-nous</h2>
       {formElementsArray.map(formElement => (
         <Input
           key={formElement.id}
