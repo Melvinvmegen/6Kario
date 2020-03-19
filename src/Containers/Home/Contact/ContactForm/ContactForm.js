@@ -3,6 +3,7 @@ import Button from '../../../../Components/FormSubmit/FormSubmit'
 import Input from '../../../../Components/Input/Input'
 import classes from './ContactForm.module.css'
 import Spinner from '../../../../Components/Spinner/Spinner';
+import axios from '../../../../axios-contacts'
 
 class ContactForm extends Component {
   state = {
@@ -94,17 +95,17 @@ class ContactForm extends Component {
     const contact = {
       contactData: formData
     }
-    // axios.post('/contacts.json', contact)
-    //   .then(response => {
-    //     this.setState({ loading: false }, () => {
-    //       this.props.modalClosed();
-    //     })
-    //   })
-    //   .catch(error => {
-    //     this.setState({ loading: false }, () => {
-    //       this.props.modalClosed();
-    //     })
-    //   });
+    axios.post('/contacts.json', contact)
+      .then(response => {
+        this.setState({ loading: false }, () => {
+          this.props.modalClosed();
+        })
+      })
+      .catch(error => {
+        this.setState({ loading: false }, () => {
+          this.props.modalClosed();
+        })
+      });
   }
 
   checkValidity(value, rules) {

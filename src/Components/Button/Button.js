@@ -5,7 +5,7 @@ const Button = (props) => {
     <div className={props.wrapperClass + " btn-contact"} onClick={props.modal} >
       <span>
         <a className={props.btnClass + " button"} id={props.id ? props.id : "sticky-hire-me"}
-          title="hire-me" > {props.action ? props.action : "Contact"}</a>
+          title="contactez-nous" > {props.action ? props.action : "Contact"}</a>
       </span>
     </div>
   )

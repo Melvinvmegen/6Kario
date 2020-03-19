@@ -27,7 +27,7 @@ class Contact extends Component {
         <Modal show={this.state.visible} modalClosed={this.modalClosing} >
           <ContactForm show={this.state.visible} />
         </Modal>
-        <Divider title="Contact" />
+        <Divider title="CONTACT" />
         <div className={classes.InnerContact}>
           <Map />
           <SideMap modal={this.modalHandler} />

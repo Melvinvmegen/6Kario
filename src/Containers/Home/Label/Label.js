@@ -10,7 +10,7 @@ class Label extends Component {
   state = {
     inputs: [
       {
-        id: 1, title: 'Label indépendant spécialisé en musiques urbaines', text: 'Couper avec les standarts actuels et mettre l’accent sur l’épanouissement personnel des artistes tout en façilitant le processus créatif afin de proposer des créations personnelles et uniques. Aider les artistes à se développer, rayonner, les soutenirs, et s’engager avec eux.'
+        id: 1, title: 'LABEL INDEPENDANT SPECIALISE EN MUSIQUES URBAINES', text: 'Couper avec les standarts actuels et mettre l’accent sur l’épanouissement personnel des artistes tout en façilitant le processus créatif afin de proposer des créations personnelles et uniques. Aider les artistes à se développer, rayonner, les soutenirs, et s’engager avec eux.'
       },
       {
         id: 2, title: 'L’HUMAIN COMME PILIER', text: 'L’ accompagnement se veut être des plus performant et humain mais surtout d’être le moins intrusif possible à tous les niveaux afin de garder le rythme et pouvoir proposer des créations toujours plus engageantes, fédératrices et originales.'
@@ -20,10 +20,10 @@ class Label extends Component {
       }
     ],
     images: [
-      { img: "https://source.unsplash.com/random/1200x600", alt: "Royal Brinkman" },
-      { img: "https://source.unsplash.com/random/1200x600", alt: "Goboat" },
-      { img: "https://source.unsplash.com/random/1200x600", alt: "Mindseed" },
-      { img: "https://source.unsplash.com/random/1200x600", alt: "ThomasKrief" },
+      { img: "https://source.unsplash.com/random/1200x400", alt: "" },
+      { img: "https://source.unsplash.com/random/1200x400", alt: "" },
+      { img: "https://source.unsplash.com/random/1200x400", alt: "" },
+      { img: "https://source.unsplash.com/random/1200x400", alt: "" },
     ],
     nextIcon: <span aria-hidden="true" className="fa fa-chevron-right" />,
     prevIcon: <span aria-hidden="true" className="fa fa-chevron-left" />
@@ -33,7 +33,7 @@ class Label extends Component {
     return (
       <div className={classes.Label}>
         <a href="/" id="Label" className="section-anchor-first"> </a>
-        <Divider title="Label" />
+        <Divider title="LABEL" />
         <ContentHead title={this.state.inputs[0].title} text={this.state.inputs[0].text} />
         <LabelMain input1={this.state.inputs[1]} input2={this.state.inputs[2]} />
         <Carousel next={this.state.nextIcon} prev={this.state.prevIcon} img={this.state.images} />

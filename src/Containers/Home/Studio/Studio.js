@@ -32,7 +32,7 @@ class Studio extends Component {
     return (
       <div className={classes.Studio}>
         <a href="/" id="Studio" className="section-anchor-first"> </a>
-        <Divider title="Studio" />
+        <Divider title="STUDIO" />
         <ContentHead title={this.state.inputs[0].title} text={this.state.inputs[0].text} />
         <StudioMain input1={this.state.inputs[1]} input2={this.state.inputs[2]} next={this.state.nextIcon} prev={this.state.prevIcon} img={this.state.images} />
       </div>
