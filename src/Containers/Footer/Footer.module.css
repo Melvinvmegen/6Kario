@@ -33,7 +33,7 @@
 }
 
 .FooterInnerCenter a {
-  color: white;
+  color: white !important;
 }
 
 .FooterInnerRight {
