@@ -1,0 +1,9 @@
+.LogoWrapper {
+  position: relative;
+}
+
+.Logo {
+  position: absolute;
+  top: -25px;
+  left: 75px;
+}

@@ -18,7 +18,7 @@ class Footer extends Component {
       <div className={classes.Footer}>
         <div className={classes.FooterInner}>
           <div className={classes.FooterInnerLeft}>
-            <Logo />
+            <Logo footer />
           </div>
           <div className={classes.FooterInnerCenter}>
             <h2><a href="/">Mentions légales</a></h2>

@@ -9,7 +9,6 @@ const NavItem = (props) => {
     <div className="nav-menu-item" key={found.id} className={"http://localhost:3000/#" + found.name.replace(/ /g, "-") === document.URL ? "nav-anim" : ""} >
       <a href={"#" + found.name.replace(/ /g, "-")}>
         <span className="text">{found.name}</span>
-        <span className="line -bottom"></span>
       </a>
     </div>
   )

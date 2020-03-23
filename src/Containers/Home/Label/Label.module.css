@@ -1,3 +1,9 @@
 .Label {
   margin: 150px 0;
 }
+
+@media (max-width: 1024px) {
+  .Label {
+    margin-top: -25%;
+  }
+}

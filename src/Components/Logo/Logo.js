@@ -1,9 +1,12 @@
 import React from 'react'
+import logoWhite from './6KLABELw.png'
+import logo from './6KLABEL.png'
+import classes from './Logo.module.css'
 
-const Logo = () => {
+const Logo = (props) => {
   return (
-    <div className="">
-      <h1><a href="/">6k.Rio records</a></h1>
+    <div className={classes.LogoWrapper}>
+      <img src={props.logo ? logo : logoWhite} alt="logo" className={props.footer ? classes.Logo : null} />
     </div>
   )
 }

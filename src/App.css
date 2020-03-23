@@ -6,6 +6,10 @@ h3 a {
   color: black !important;
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+
 .fa-chevron-down {
   font-size: 40px;
   color: #fff;
